@@ -4,17 +4,17 @@ function NavBar() {
 
 return (
   <nav className="flex items-center justify-evenly">
-    <div className="border-2 w-64">
-
+    <div className="w-64 mt-2">
+      <h2 className="text-white flex justify-center ">WAVGS LOGO</h2>
     </div>
-    <div className="flex flex-row justify-center bg-black-300 border-2 w-200">
-      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/10 hover:text-white">Home</a>
-      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/10 hover:text-white">Events</a>
-      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/10 hover:text-white">Community</a>
-      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/10 hover:text-white">About Us</a>
+    <div className="relative z-10 rounded-lg bg-white/ backdrop-blur-md border border-white/8 shadow-[inset_0_2px_4px_rgba(255,255,255,0.4),_0_10px_15px_-3px_rgba(0,0,0,0.1)] flex flex-row justify-center w-[600px] mt-2">
+      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/20">Home</a>
+      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/20">Events</a>
+      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/20">Community</a>
+      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/20">About Us</a>
     </div>
-    <div className="flex flex-row justify-center border-2 w-64">
-      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/10 hover:text-white">Join Us</a>
+    <div className="relative z-10 rounded-lg bg-white/ backdrop-blur-md border border-white/8 shadow-[inset_0_2px_4px_rgba(255,255,255,0.4),_0_10px_15px_-3px_rgba(0,0,0,0.1)] flex flex-row justify-center w-[200px] mt-2">
+      <a href="#" class="rounded-md my-2 px-8 py-2 text-white font-medium hover:bg-white/20  hover:text-white">Join Us</a>
     </div>
   </nav>
 )}
