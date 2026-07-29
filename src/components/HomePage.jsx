@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function HomePage() {
     return(
-        <div className="flex h-screen flex-col justify-between overflow-hidden mx-5 py-8 px-6 mt-5">
+        <div className="flex h-screen flex-col justify-between overflow-hidden mx-5 py-8 px-6">
             <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
