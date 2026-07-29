@@ -3,7 +3,7 @@
 function NavBar() {
 
 return (
-  <nav className="fixed top-0 left-5 right-5 z-50 flex items-center justify-evenly">
+  <nav className="fixed top-0 left-0 right-0 z-50 bg-zinc-950/25 backdrop-blur-xl border-b border-white/10 pb-2.5 flex items-center justify-evenly">
     <div className="w-64 mt-2">
       <h2 className="text-white flex justify-center font-bold">WAVGS LOGO</h2>
     </div>
