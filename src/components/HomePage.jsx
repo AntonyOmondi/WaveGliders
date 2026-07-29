@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 export default function HomePage() {
     return(
-        <div className="flex h-screen flex-col justify-between overflow-hidden mx-5 py-8 px-6">
+        <div className="flex h-screen flex-col justify-between overflow-hidden mx-5 py-25 px-12">
             <motion.h1
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -14,7 +14,7 @@ export default function HomePage() {
             >
             Wave Gliders Swim Club
             </motion.h1>
-            <div className="max-w-4xl self-center -translate-y-30 p-6">
+            <div className="max-w-4xl self-center p-6">
                 <h2 className="text-white text-xl md:text-4xl text-center">
                     Welcome to Wave Gliders Swim Club
                 </h2>
