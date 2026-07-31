@@ -7,14 +7,21 @@ export default function HomePage() {
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{
-                duration: 0.9,
+                duration: 1,
                 ease: "easeOut",
             }}
             className="max-w-5xl text-balance text-white text-2xl md:text-6xl lg:text-[100px] font-bold leading-[0.95]"
             >
             Wave Gliders Swim Club
             </motion.h1>
-            <div className="max-w-4xl self-center p-6">
+            <motion.div 
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{
+                duration: 1,
+                ease: "easeOut",
+            }}
+            className="max-w-4xl self-center p-6">
                 <h2 className="text-white text-xl md:text-4xl text-center">
                     Welcome to Wave Gliders Swim Club
                 </h2>
@@ -29,7 +36,7 @@ export default function HomePage() {
                         About Us
                     </button>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
