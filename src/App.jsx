@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import Footer from './components/Footer'
+import Programmes from './components/Programmes'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <NavBar />
         <HomePage />
       </div>
+      <Programmes />
       <section className='bg-zinc-950/80'>
         <Footer />
       </section>
