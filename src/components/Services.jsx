@@ -66,7 +66,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-700 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
+    <div className="min-h-screen bg-slate-700/90 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
       {/* SECTION HEADER */}
       {}
       <div className="text-center max-w-2xl mx-auto mb-12">
