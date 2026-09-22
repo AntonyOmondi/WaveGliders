@@ -18,7 +18,7 @@ const SERVICES_DATA = [
     title: "Under 17 years fast swimming course",
     badge: "All Levels",
     badgeType: "slate",
-    currency: "Ksh. KES",
+    currency: "Ksh.",
     price: "20,000",
     duration: "18 days",
     image: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80",
@@ -66,7 +66,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-700/90 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
+    <div className="min-h-screen bg-slate-900/80 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
       {/* SECTION HEADER */}
       {}
       <div className="text-center max-w-2xl mx-auto mb-12">
