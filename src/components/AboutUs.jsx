@@ -1,4 +1,5 @@
-import wavegliders1 from '../assets/wavegliders1.JPG';
+import wavegliders2 from '../assets/wavegliders2.JPG';
+import waveglider3 from '../assets/waveglider3.JPG'
 
 // --- Lightweight SVG Icons (Zero package dependency errors) ---
 const TargetIcon = () => (
@@ -74,7 +75,7 @@ export default function AboutUs() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-slate-600 shadow-xl">
             <img 
-              src={wavegliders1} 
+              src={wavegliders2} 
               alt="Wave Gliders Team" 
               className="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -117,7 +118,7 @@ export default function AboutUs() {
           </div>
           <h2 className="text-2xl font-bold text-white tracking-tight">Our Mission</h2>
           <p className="text-sm text-slate-200 font-light leading-relaxed">
-            To enhance swimming and aquatic safety skills by developing confident competitive swimmers while guaranteeing safety and personal development for every age group.
+            At Wave Gliders, we train swimmers to move with the water, not fight against it. Our approach is rooted in building refined technique, body control, and smart racing. We believe that speed comes from skill, and every session is designed to develop swimmers who are strong, smooth, and efficient.
           </p>
         </div>
 
@@ -128,7 +129,7 @@ export default function AboutUs() {
           </div>
           <h2 className="text-2xl font-bold text-white tracking-tight">Our Vision</h2>
           <p className="text-sm text-slate-200 font-light leading-relaxed">
-            To be the leading provider of professional swimming instruction and aquatic safety training, recognized regionally for excellence in methodologies and safety standards.
+            To become East Africa's top swimming club by offering a clear, progressive development pathway-from Learn-to-Swim through to elite competition-empowering athletes and coaches to reach their full potential.'
           </p>
         </div>
 
@@ -194,7 +195,7 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="overflow-hidden rounded-xl border border-slate-600">
             <img 
-              src={wavegliders1} 
+              src={waveglider3} 
               alt="Pool Facility" 
               className="w-full h-72 sm:h-80 object-cover"
             />
@@ -236,11 +237,10 @@ export default function AboutUs() {
 
       {/* 6. Contact & Payment Info Table */}
       <section className="bg-slate-700/80 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-slate-600/80 border-t-4 border-t-orange-500 space-y-6">
-        <h2 className="text-xl sm:text-2xl font-bold text-white tracking-tight">
-          Contact & Payment Information
+        <h2 className="text-xl sm:text-2xl font-bold text-center text-white tracking-tight">
+          Contacts
         </h2>
-
-        <div className="divide-y divide-slate-600/60 text-sm">
+        <div className="flex flex-col max-w-200 mx-auto divide-y divide-slate-600/60 text-sm">
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
             <span className="text-slate-300 font-medium">Email:</span>
             <span className="text-white font-semibold">info@wavegliders.com</span>
@@ -254,16 +254,6 @@ export default function AboutUs() {
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
             <span className="text-slate-300 font-medium">Website:</span>
             <span className="text-cyan-400 font-semibold">www.wavegliders.com</span>
-          </div>
-
-          <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-            <span className="text-slate-300 font-medium">M-PESA Paybill:</span>
-            <span className="text-orange-400 font-semibold">Business Number: 247247</span>
-          </div>
-
-          <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
-            <span className="text-slate-300 font-medium">Account Number:</span>
-            <span className="text-white font-semibold">0701583427</span>
           </div>
         </div>
       </section>
