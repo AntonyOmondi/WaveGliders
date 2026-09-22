@@ -32,10 +32,10 @@ export default function NavBar() {
             Events
           </a>
           <a 
-            href="#community" 
+            href="#service" 
             className="rounded-full px-5 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/15 transition-all duration-200"
           >
-            Community
+            Services
           </a>
           <a 
             href="#about" 
