@@ -90,11 +90,11 @@ export default function NavBar() {
             Events
           </a>
           <a 
-            href="#community" 
+            href="#service" 
             onClick={() => setIsMobileMenuOpen(false)}
             className="px-4 py-2 rounded-xl text-slate-200 hover:bg-white/10 font-medium"
           >
-            Community
+            Services
           </a>
           <a 
             href="#about" 
