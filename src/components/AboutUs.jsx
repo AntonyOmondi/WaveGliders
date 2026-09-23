@@ -1,4 +1,4 @@
-import medals from '../assets/medals.JPG';
+import facility from '../assets/facility.JPG';
 import swimming from '../assets/swimming.JPG'
 
 // --- Lightweight SVG Icons (Zero package dependency errors) ---
@@ -75,9 +75,9 @@ export default function AboutUs() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-slate-600 shadow-xl">
             <img 
-              src={medals} 
+              src={swimming} 
               alt="Wave Gliders Team" 
-              className="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-500"
+              className="w-full h-80 sm:h-96 object-cover object-top hover:scale-105 transition-transform duration-500"
             />
           </div>
           <div className="w-full lg:w-1/2 space-y-5">
@@ -193,11 +193,11 @@ export default function AboutUs() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="overflow-hidden rounded-xl border border-slate-600">
+          <div className="overflow-hidden rounded-xl border border-slate-600 shadow-xl">
             <img 
-              src={swimming} 
+              src={facility} 
               alt="Pool Facility" 
-              className="w-full h-72 sm:h-80 object-cover"
+              className="w-full object-contain h-72 sm:h-100 object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
 
@@ -208,7 +208,7 @@ export default function AboutUs() {
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white">Olympic-Sized Training Pools</h3>
-                <p className="text-xs text-slate-300 font-light mt-0.5">Temperature-controlled 25-meter pools with separate lanes.</p>
+                <p className="text-xs text-slate-300 font-light mt-0.5">World standard 25-meter and 50-meter pools with separate lanes.</p>
               </div>
             </div>
 
@@ -218,7 +218,7 @@ export default function AboutUs() {
               </div>
               <div>
                 <h3 className="text-sm font-semibold text-white">Kids Training Pools</h3>
-                <p className="text-xs text-slate-300 font-light mt-0.5">Shallow, warm-water pools designed specifically for children.</p>
+                <p className="text-xs text-slate-300 font-light mt-0.5">Shallow pools designed specifically for children.</p>
               </div>
             </div>
 
