@@ -2,7 +2,7 @@ import person from '../assets/person.JPG';
 
 export default function Programmes() {
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+    <section className="py-12 mt-10 bg-cyan-900 rounded-lg px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 bg-slate-900/80 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-[0_0_25px_rgba(0,0,0,0.4)]">
         
         {/* Left Side: Hero / Feature Image */}

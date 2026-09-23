@@ -45,20 +45,22 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
             
             {/* Primary Button */}
             <motion.button
+              id="service"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onProgrammesClick}
-              className="w-full sm:w-44 py-3 px-6 text-sm font-semibold text-white rounded-xl bg-orange-500 hover:bg-orange-600 shadow-lg shadow-orange-950/50 transition-colors duration-200"
+              className="w-full cursor-pointer sm:w-44 curso-pointer py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-orange-950/50 transition-colors duration-200"
             >
               Our Programmes
             </motion.button>
 
             {/* Secondary Glassmorphism Button */}
             <motion.button
+              id="about"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onAboutClick}
-              className="w-full sm:w-44 py-3 px-6 text-sm font-semibold text-slate-200 rounded-xl bg-slate-800/90 hover:bg-slate-700/90 border border-slate-700/80 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] transition-colors duration-200"
+              className="w-full cursor-pointer sm:w-44 py-3 px-6 text-sm font-semibold text-slate-200 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:bg-slate-700/90 border border-slate-700/80 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] transition-colors duration-200"
             >
               About Us
             </motion.button>

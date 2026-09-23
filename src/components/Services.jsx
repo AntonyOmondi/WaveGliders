@@ -66,7 +66,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900/80 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
+    <div className="min-h-screen bg-cyan-900/90 mt-10 text-slate-100 font-sans selection:bg-slate-700 selection:text-white p-4 sm:p-8 lg:p-12">
       {/* SECTION HEADER */}
       {}
       <div className="text-center max-w-2xl mx-auto mb-12">
@@ -147,7 +147,7 @@ export default function App() {
               <div className="grid grid-cols-2 gap-3">
                 <button 
                   onClick={() => handleOpenDetails(service)}
-                  className="w-full py-2.5 px-4 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors duration-200 active:scale-95 flex items-center justify-center gap-1.5 shadow-sm"
+                  className="w-full cursor-pointer py-2.5 px-4 text-xs font-semibold rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 transition-colors duration-200 active:scale-95 flex items-center justify-center gap-1.5 shadow-sm"
                 >
                   <Info className="w-3.5 h-3.5" />
                   View Details
@@ -155,7 +155,7 @@ export default function App() {
 
                 <button 
                   onClick={() => handleOpenBooking(service)}
-                  className="w-full py-2.5 px-4 text-xs font-semibold rounded-xl bg-orange-500 hover:bg-orange-600 text-white shadow-lg shadow-orange-950/50 transition-all duration-200 active:scale-95 flex items-center justify-center gap-1.5"
+                  className="w-full cursor-pointer py-2.5 px-4 text-xs font-semibold rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:bg-orange-600 text-white shadow-lg shadow-orange-950/50 transition-all duration-200 active:scale-95 flex items-center justify-center gap-1.5"
                 >
                   <Calendar className="w-3.5 h-3.5" />
                   Book Now

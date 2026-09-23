@@ -54,7 +54,7 @@ const AcademicCapIcon = () => (
 
 export default function AboutUs() {
   return (
-    <div className="min-h-screen pt-24 text-slate-100 py-12 sm:px-6 bg-slate-900/70 lg:px-12 mx-auto space-y-16">
+    <div className="min-h-screen pt-24 text-slate-100 py-12 sm:px-6 bg-cyan-900/70 lg:px-12 mx-auto space-y-16">
       
       {/* 1. Header Banner */}
       <div className="text-center space-y-3">
@@ -243,12 +243,12 @@ export default function AboutUs() {
         <div id='join' className="flex flex-col max-w-200 mx-auto divide-y divide-slate-600/60 text-sm">
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
             <span className="text-slate-300 font-medium">Email:</span>
-            <span className="text-white font-semibold">wavegliderskenya@gmail.com</span>
+            <span className="text-white font-semibold">info@wavegliders.com</span>
           </div>
 
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
             <span className="text-slate-300 font-medium">Phone / WhatsApp / SMS:</span>
-            <span className="text-white font-semibold">+254 726 462 641 | +254 110 951 560 </span>
+            <span className="text-white font-semibold">+254 700 123 456 | +254 701 583 427</span>
           </div>
 
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
