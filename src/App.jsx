@@ -15,7 +15,9 @@ function App() {
           <HomePage />
         </section>
       </div>
-      <Programmes />
+      <div className="bg-slate-900/80">
+        <Programmes />
+      </div>
       <section id='service'>
         <Services />
       </section>   
