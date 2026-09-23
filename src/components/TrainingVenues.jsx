@@ -58,7 +58,7 @@ const ExternalLinkIcon = () => (
 
 export default function TrainingVenues() {
   return (
-    <section className="min-h-screen py-16 px-4 sm:px-6 bg-cyan-900/90 lg:px-12 mx-auto space-y-12">
+    <section id='venues' className="scroll-mt-12 min-h-screen py-16 px-4 sm:px-6 bg-cyan-900/90 lg:px-12 mx-auto space-y-12">
       
       {/* Header */}
       <div className="text-center space-y-3">
