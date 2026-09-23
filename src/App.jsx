@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Programmes from './components/Programmes'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
+import TrainingVenues from './components/TrainingVenues'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       </div>
       <section id='service'>
         <Services />
-      </section>   
+      </section> 
+      <TrainingVenues />  
       <section id='about'>
         <AboutUs />
       </section>
