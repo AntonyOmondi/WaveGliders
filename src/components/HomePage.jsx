@@ -15,11 +15,11 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
         transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-6xl z-10"
       >
-        <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-400 bg-cyan-950/50 border border-cyan-800/60 rounded-full backdrop-blur-md">
+        <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-100 bg-cyan-950 border border-cyan-800/60 rounded-full backdrop-blur-md">
           Elite Swimming & Training
         </span>
-        <h1 className="text-balance text-white text-4xl sm:text-6xl md:text-7xl lg:text-[100px] font-extrabold tracking-tight leading-[0.95]">
-          Wave <span className="text-slate-400">Gliders</span> Swim Club
+        <h1 className="text-balance text-white text-shadow-lg text-4xl sm:text-6xl md:text-7xl lg:text-[100px] font-extrabold tracking-tight leading-[0.95]">
+          Wave <span className="text-slate-900">Gliders</span> Swim Club
         </h1>
       </motion.div>
 
@@ -30,13 +30,13 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
         transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         className="max-w-3xl self-center w-full z-10 mt-12"
       >
-        <div className="p-6 sm:p-8 rounded-2xl bg-gray-700/20 backdrop-blur-md border border-slate-500/90 shadow-[0_0_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
+        <div className="p-6 sm:p-8 rounded-2xl bg-gray-700/60 backdrop-blur-md border border-slate-500/90 shadow-[0_0_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
           
           <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
             Welcome to Wave Gliders Swim Club
           </h2>
 
-          <p className="mt-3 max-w-xl text-slate-300 text-sm sm:text-base font-light leading-relaxed">
+          <p className="mt-3 max-w-xl text-slate-100 text-sm sm:text-base font-light leading-relaxed">
             Empowering swimmers of all ages through world-class coaching, personalized training, and a passion for excellence in and beyond the water.
           </p>
 
