@@ -1,5 +1,5 @@
 import facility from '../assets/facility.JPG';
-import swimming from '../assets/swimming.JPG'
+import swimming_bg from '../assets/swimming-bg.JPG'
 
 // --- Lightweight SVG Icons (Zero package dependency errors) ---
 const TargetIcon = () => (
@@ -75,7 +75,7 @@ export default function AboutUs() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-slate-600 shadow-xl">
             <img 
-              src={swimming} 
+              src={swimming_bg} 
               alt="Wave Gliders Team" 
               className="w-full h-80 sm:h-96 object-cover object-top hover:scale-105 transition-transform duration-500"
             />
