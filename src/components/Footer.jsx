@@ -9,8 +9,8 @@ export default function Footer (){
             {/* Contact Information */}
                 <div className="space-y-4">
                     <h3 className="text-xl text-center font-semibold mb-4">Contact Us</h3>
-                    <p className="flex items-center gap-3 text-sky-100 hover:text-sky-300 transition-colors cursor-pointer"><FaEnvelope />info@swimclub.com</p>
-                    <p className="flex items-center gap-3 text-sky-100 hover:text-sky-300 transition-colors cursor-pointer"><FaPhoneAlt /> +254 700 123 456</p>
+                    <p className="flex items-center gap-3 text-sky-100 hover:text-sky-300 transition-colors cursor-pointer"><FaEnvelope />wavegliderskenya@gmail.com</p>
+                    <p className="flex items-center gap-3 text-sky-100 hover:text-sky-300 transition-colors cursor-pointer"><FaPhoneAlt /> +254 726 462 641</p>
                     <p className="flex items-center gap-3 text-sky-100 hover:text-sky-300 transition-colors cursor-pointer"><FaMapMarkerAlt /> Nairobi, Kenya</p>
                 </div>
 
@@ -28,7 +28,7 @@ export default function Footer (){
                         </a>
 
                         <a
-                            href="https://instagram.com/yourclub"
+                            href="https://www.instagram.com/wavegliderskenya/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 hover:text-sky-300 transition-colors cursor-pointer"
@@ -47,7 +47,7 @@ export default function Footer (){
                             <span>X</span>
                         </a>
                         <a
-                            href="https://x.com/yourclub"
+                            href="https://www.tiktok.com/@wavegliderskenya?_r=1&_t=ZS-99yuMt1agfE"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center gap-3 hover:text-sky-300 transition-colors cursor-pointer"
