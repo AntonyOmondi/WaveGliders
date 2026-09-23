@@ -240,7 +240,7 @@ export default function AboutUs() {
         <h2 className="text-xl sm:text-2xl font-bold text-center text-white tracking-tight">
           Contacts
         </h2>
-        <div className="flex flex-col max-w-200 mx-auto divide-y divide-slate-600/60 text-sm">
+        <div id='join' className="flex flex-col max-w-200 mx-auto divide-y divide-slate-600/60 text-sm">
           <div className="py-3 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1">
             <span className="text-slate-300 font-medium">Email:</span>
             <span className="text-white font-semibold">info@wavegliders.com</span>
