@@ -9,7 +9,7 @@ import AboutUs from './components/AboutUs'
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-[url('/src/assets/wgsc-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="min-h-screen bg-slate-700/20 bg-blend-multiply bg-[url('/src/assets/swimming.jpg')] bg-cover object-contain bg-no-repeat">
         <NavBar />
         <section id='home'>
           <HomePage />
