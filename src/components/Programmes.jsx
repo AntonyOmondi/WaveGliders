@@ -1,4 +1,4 @@
-import wavegliders1 from '../assets/wavegliders1.JPG';
+import person from '../assets/person.JPG';
 
 export default function Programmes() {
   return (
@@ -8,9 +8,9 @@ export default function Programmes() {
         {/* Left Side: Hero / Feature Image */}
         <div className="w-full lg:w-1/2 shrink-0 overflow-hidden rounded-xl border border-slate-700/60 shadow-xl">
           <img 
-            src={wavegliders1} 
+            src={person} 
             alt="Wave Gliders Swim Club" 
-            className="w-full h-80 sm:h-96 lg:h-[420px] object-cover hover:scale-105 transition-transform duration-500 ease-out"
+            className="w-full h-80 sm:h-96 lg:h-[420px] object-cover object-top hover:scale-105 transition-transform duration-500 ease-out"
           />
         </div>
 
