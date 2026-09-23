@@ -1,5 +1,5 @@
-import wavegliders2 from '../assets/wavegliders2.JPG';
-import waveglider3 from '../assets/waveglider3.JPG'
+import medals from '../assets/medals.JPG';
+import swimming from '../assets/swimming.JPG'
 
 // --- Lightweight SVG Icons (Zero package dependency errors) ---
 const TargetIcon = () => (
@@ -75,7 +75,7 @@ export default function AboutUs() {
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
           <div className="w-full lg:w-1/2 overflow-hidden rounded-xl border border-slate-600 shadow-xl">
             <img 
-              src={wavegliders2} 
+              src={medals} 
               alt="Wave Gliders Team" 
               className="w-full h-80 sm:h-96 object-cover hover:scale-105 transition-transform duration-500"
             />
@@ -195,7 +195,7 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="overflow-hidden rounded-xl border border-slate-600">
             <img 
-              src={waveglider3} 
+              src={swimming} 
               alt="Pool Facility" 
               className="w-full h-72 sm:h-80 object-cover"
             />
