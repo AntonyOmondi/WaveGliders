@@ -26,16 +26,16 @@ export default function NavBar() {
             Home
           </a>
           <a 
-            href="#events" 
-            className="rounded-full px-5 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/15 transition-all duration-200"
-          >
-            Events
-          </a>
-          <a 
             href="#service" 
             className="rounded-full px-5 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/15 transition-all duration-200"
           >
             Services
+          </a>
+          <a 
+            href="#venues" 
+            className="rounded-full px-5 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/15 transition-all duration-200"
+          >
+            Training Venues
           </a>
           <a 
             href="#about" 
@@ -49,7 +49,7 @@ export default function NavBar() {
         <div className="hidden md:flex items-center">
           <a
             href="#join"
-            className="rounded-full bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-6 py-2 shadow-lg shadow-orange-950/40 border border-orange-400/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+            className="rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:bg-orange-600 text-white text-sm font-semibold px-6 py-2 shadow-lg shadow-orange-950/40 border border-orange-400/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
           >
             Join Us
           </a>
@@ -83,18 +83,18 @@ export default function NavBar() {
             Home
           </a>
           <a 
-            href="#events" 
-            onClick={() => setIsMobileMenuOpen(false)}
-            className="px-4 py-2 rounded-xl text-slate-200 hover:bg-white/10 font-medium"
-          >
-            Events
-          </a>
-          <a 
             href="#service" 
             onClick={() => setIsMobileMenuOpen(false)}
             className="px-4 py-2 rounded-xl text-slate-200 hover:bg-white/10 font-medium"
           >
             Services
+          </a>
+          <a 
+            href="#venues" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="px-4 py-2 rounded-xl text-slate-200 hover:bg-white/10 font-medium"
+          >
+            Training Venues
           </a>
           <a 
             href="#about" 
