@@ -44,8 +44,8 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 w-full sm:w-auto">
             
             {/* Primary Button */}
-            <motion.button
-              id="service"
+            <motion.button 
+              href="#service"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onProgrammesClick}
@@ -56,7 +56,7 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
 
             {/* Secondary Glassmorphism Button */}
             <motion.button
-              id="about"
+              href="#about"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onAboutClick}

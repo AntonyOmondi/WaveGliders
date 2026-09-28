@@ -9,12 +9,12 @@ export default function NavBar() {
         
         {/* Brand / Logo */}
         <div className="flex items-center">
-          <a 
-            href="#" 
-            className="text-white font-extrabold text-lg sm:text-xl tracking-wider hover:opacity-90 transition-opacity"
-          >
-            WAVE<span className="text-cyan-400">GLIDERS</span>
-          </a>
+          <img
+            href="#home" 
+            src="/src/assets/wvgsc_logo.png" 
+            alt="Wave Gliders Logo" 
+            className="h-8 sm:h-10 w-auto object-contain cursor-pointer" 
+          />
         </div>
 
         {/* Desktop Navigation Links (Centered Glass Pill) */}
@@ -26,7 +26,7 @@ export default function NavBar() {
             Home
           </a>
           <a 
-            href="#service" 
+            href="#services" 
             className="rounded-full px-5 py-1.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/15 transition-all duration-200"
           >
             Services
