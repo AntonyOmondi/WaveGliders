@@ -8,14 +8,17 @@ export default function NavBar() {
       <nav className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         
         {/* Brand / Logo */}
-        <div className="flex items-center">
+        <a 
+          href="#home"
+          aria-label="Wave Gliders - back to home"
+          className="group flex items-center shrink-0"
+        >
           <img
-            href="#home" 
-            src="/src/assets/wvgsc_logo.png" 
-            alt="Wave Gliders Logo" 
-            className="h-8 sm:h-10 w-auto object-contain cursor-pointer" 
+            src="/src/assets/wvgsc_logo.png"
+            alt="Wave Gliders Logo"
+            className="h-8 sm:h-10 w-auto object-contain transition-all duration-300 ease-out group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] group-active:scale-95"
           />
-        </div>
+        </a>
 
         {/* Desktop Navigation Links (Centered Glass Pill) */}
         <div className="hidden md:flex items-center justify-center rounded-full bg-white/5 backdrop-blur-md border border-white/10 p-1.5 shadow-[inset_0_1px_2px_rgba(255,255,255,0.2),_0_8px_20px_rgba(0,0,0,0.3)]">
