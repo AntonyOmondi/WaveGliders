@@ -44,18 +44,18 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 w-full sm:w-auto">
             
             {/* Primary Button */}
-            <motion.button 
-              href="#service"
+            <motion.a 
+              href="#services"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={onProgrammesClick}
               className="w-full cursor-pointer sm:w-44 curso-pointer py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-orange-950/50 transition-colors duration-200"
             >
               Our Programmes
-            </motion.button>
+            </motion.a>
 
             {/* Secondary Glassmorphism Button */}
-            <motion.button
+            <motion.a
               href="#about"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
@@ -63,7 +63,7 @@ export default function HomePage({ onProgrammesClick, onAboutClick }) {
               className="w-full cursor-pointer sm:w-44 py-3 px-6 text-sm font-semibold text-slate-200 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:bg-slate-700/90 border border-slate-700/80 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.2)] transition-colors duration-200"
             >
               About Us
-            </motion.button>
+            </motion.a>
 
           </div>
         </div>
