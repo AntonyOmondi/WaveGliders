@@ -6,6 +6,7 @@ import Programmes from './components/Programmes'
 import Services from './components/Services'
 import AboutUs from './components/AboutUs'
 import TrainingVenues from './components/TrainingVenues'
+import Ceo from './components/Ceo'
 
 function App() {
   return (
@@ -16,14 +17,11 @@ function App() {
           <HomePage />
         </section>
       </div>
-        <Programmes />
-      <section id='service'>
-        <Services />
-      </section> 
+      <Programmes />
+      <Services />
       <TrainingVenues />  
-      <section id='about'>
-        <AboutUs />
-      </section>
+      <AboutUs />
+      <Ceo />
       <section className='bg-zinc-950/80'>
         <Footer />
       </section>
