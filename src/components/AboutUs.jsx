@@ -1,5 +1,5 @@
-import facility from '../assets/facility.JPG';
-import swimming_bg from '../assets/swimming-bg.JPG'
+import facility from '../assets/facility.jpg';
+import swimming_bg from '../assets/swimming-bg.jpg'
 
 // --- Lightweight SVG Icons (Zero package dependency errors) ---
 const TargetIcon = () => (
