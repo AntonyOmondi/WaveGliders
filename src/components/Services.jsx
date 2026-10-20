@@ -15,22 +15,22 @@ const SERVICES_DATA = [
   },
   {
     id: 2,
-    title: "Under 17 years fast swimming course",
-    badge: "All Levels",
+    title: "Learn to Swim - Under 5 years",
+    badge: "Minors",
     badgeType: "slate",
     currency: "Ksh.",
-    price: "20,000",
+    price: "15,000",
     duration: "18 days",
     image: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80",
     description: "An intensive youth program focusing on sprint techniques, stream-line positioning, and stroke efficiency."
   },
   {
     id: 3,
-    title: "Adult Basic swimming",
+    title: "Adult Basic swimming - Beginners and Competitive",
     badge: "Advanced",
     badgeType: "orange",
     currency: "Ksh.",
-    price: "25,000",
+    price: "20,000",
     duration: "One month",
     image: "https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=800&q=80",
     description: "Tailored adult water confidence and stroke technique sessions aimed at building stamina and water safety."
