@@ -51,16 +51,6 @@ export default function App() {
     });
   };
 
-  const handleOpenBooking = (service) => {
-    setActiveModal({
-      type: 'booking',
-      title: service.title,
-      price: `${service.currency} ${service.price}`,
-      duration: service.duration,
-      description: `Confirm your spot for ${service.title}. Instant registration confirmation with certified coaches.`
-    });
-  };
-
   const closeModal = () => {
     setActiveModal(null);
   };
@@ -153,13 +143,13 @@ export default function App() {
                   View Details
                 </button>
 
-                <button 
-                  onClick={() => handleOpenBooking(service)}
+                <a 
+                  href='#join'
                   className="w-full cursor-pointer py-2.5 px-4 text-xs font-semibold rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:bg-orange-600 text-white shadow-lg shadow-orange-950/50 transition-all duration-200 active:scale-95 flex items-center justify-center gap-1.5"
                 >
                   <Calendar className="w-3.5 h-3.5" />
                   Book Now
-                </button>
+                </a>
               </div>
             </div>
           </div>
