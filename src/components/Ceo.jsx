@@ -1,5 +1,5 @@
 import { Sparkles, Trophy, Palette, HeartHandshake, Quote } from 'lucide-react';
-import founderImg from '../assets/founder.JPG'; // Replace with Coach Stephanie's photo
+import founderImg from '../assets/founder.jpg'; // Replace with Coach Stephanie's photo
 
 export default function MeetCEO() {
   return (
