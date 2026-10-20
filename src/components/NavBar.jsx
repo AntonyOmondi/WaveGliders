@@ -14,7 +14,7 @@ export default function NavBar() {
           className="group flex items-center shrink-0"
         >
           <img
-            src="/src/assets/wvgsc_logo.png"
+            src="/src/assets/wvgsclogo.png"
             alt="Wave Gliders Logo"
             className="h-8 sm:h-10 w-auto object-contain transition-all duration-300 ease-out group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] group-active:scale-95"
           />
