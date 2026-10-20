@@ -1,4 +1,4 @@
-import person from '../assets/person.JPG';
+import person from '../assets/coach.jpg';
 
 export default function Programmes() {
   return (
