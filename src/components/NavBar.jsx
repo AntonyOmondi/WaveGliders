@@ -1,4 +1,5 @@
 import { useState } from "react";
+import wvgsclogo from "src/assets/wvgsc_logo.png"
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ export default function NavBar() {
           className="group flex items-center shrink-0"
         >
           <img
-            src="/src/assets/wvgsc_logo.png"
+            src={wvgsclogo}
             alt="Wave Gliders Logo"
             className="h-8 sm:h-10 w-auto object-contain transition-all duration-300 ease-out group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_rgba(34,211,238,0.7)] group-active:scale-95"
           />
