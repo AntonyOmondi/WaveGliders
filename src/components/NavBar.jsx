@@ -1,5 +1,5 @@
 import { useState } from "react";
-import wvgsclogo from "src/assets/wvgsc_logo.png"
+import wvgsclogo from "src/assets/wvgsclogo.png"
 
 export default function NavBar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
