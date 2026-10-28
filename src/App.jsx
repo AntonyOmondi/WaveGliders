@@ -7,11 +7,12 @@ import Services from './components/Services'
 import AboutUs from './components/AboutUs'
 import TrainingVenues from './components/TrainingVenues'
 import Ceo from './components/Ceo'
+import bgImage from "./assets/swimming-bg.jpg"
 
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-slate-700/20 bg-blend-multiply bg-[url('/src/assets/swimming.jpg')] bg-cover object-contain bg-no-repeat">
+      <div className="min-h-screen bg-slate-700/20 bg-blend-multiply bg-cover object-contain bg-no-repeat" style={{backgroundImage: `url(${bgImage})`}}>
         <NavBar />
         <section id='home'>
           <HomePage />
