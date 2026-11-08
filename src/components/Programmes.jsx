@@ -10,7 +10,7 @@ const FEATURES = [
 
 export default function Programmes() {
   return (
-    <section id="programmes" className="py-20 px-4 sm:px-6 lg:px-12 bg-slate-950">
+    <section id="programmes" className="py-20 px-4 sm:px-6 lg:px-12 bg-ocean-700">
       <Reveal className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div className="overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-cyan-950/50">
           <img

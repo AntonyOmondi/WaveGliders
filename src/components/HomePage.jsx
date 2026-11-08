@@ -12,7 +12,7 @@ export default function HomePage() {
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-ocean-950/70 via-ocean-800/40 to-ocean-700" />
       <div className="absolute top-1/4 -left-24 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
 

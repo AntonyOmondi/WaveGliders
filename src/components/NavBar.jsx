@@ -14,7 +14,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 inset-x-0 z-50 px-4 sm:px-8 py-3 bg-slate-950/60 backdrop-blur-xl border-b border-white/10">
+    <header className="fixed top-0 inset-x-0 z-50 px-4 sm:px-8 py-3 bg-ocean-950/60 backdrop-blur-xl border-b border-white/10">
       <nav className="max-w-7xl mx-auto flex items-center justify-between gap-4">
         <a href="#home" aria-label="Wave Gliders - back to home" className="group shrink-0">
           <img
@@ -54,7 +54,7 @@ export default function NavBar() {
       </nav>
 
       {open && (
-        <div className="md:hidden mt-3 p-3 rounded-2xl bg-slate-900/95 border border-white/10 shadow-2xl flex flex-col gap-1">
+        <div className="md:hidden mt-3 p-3 rounded-2xl bg-ocean-900/95 border border-white/10 shadow-2xl flex flex-col gap-1">
           {LINKS.map((l) => (
             <a
               key={l.href}

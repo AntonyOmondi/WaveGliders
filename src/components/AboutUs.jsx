@@ -34,7 +34,7 @@ const iconColor = (accent) => (accent === "orange" ? "text-orange-300 bg-orange-
 
 export default function AboutUs() {
   return (
-    <section id="about" className="scroll-mt-16 py-24 px-4 sm:px-8 lg:px-12 bg-gradient-to-b from-slate-950 via-cyan-950/30 to-slate-950">
+    <section id="about" className="scroll-mt-16 py-24 px-4 sm:px-8 lg:px-12 bg-gradient-to-b from-ocean-800 to-ocean-700">
       <div className="max-w-7xl mx-auto space-y-20">
         <SectionHeader
           eyebrow="Our Story"
@@ -58,7 +58,7 @@ export default function AboutUs() {
               </p>
               <div className="space-y-3">
                 {HIGHLIGHTS.map(({ icon: Icon, title, text }) => (
-                  <div key={title} className="flex items-center gap-3 bg-slate-900/60 p-3.5 rounded-xl border border-white/10">
+                  <div key={title} className="flex items-center gap-3 bg-ocean-900/60 p-3.5 rounded-xl border border-white/10">
                     <Icon className="w-6 h-6 text-cyan-300 shrink-0" />
                     <div>
                       <h4 className="text-sm font-semibold text-white">{title}</h4>
@@ -79,7 +79,7 @@ export default function AboutUs() {
           ].map(({ icon: Icon, title, border, color, text }, i) => (
             <Reveal key={title} delay={i * 0.1}>
               <div className={`${card} ${border} border-t-4 h-full p-8 flex flex-col items-center text-center gap-4`}>
-                <div className="p-3 bg-slate-900/70 rounded-2xl border border-white/10"><Icon className={`w-8 h-8 ${color}`} /></div>
+                <div className="p-3 bg-ocean-900/70 rounded-2xl border border-white/10"><Icon className={`w-8 h-8 ${color}`} /></div>
                 <h3 className="text-2xl font-bold text-white">{title}</h3>
                 <p className="text-slate-300 font-light leading-relaxed">{text}</p>
               </div>
@@ -119,7 +119,7 @@ export default function AboutUs() {
               </div>
               <div className="space-y-3.5">
                 {FACILITIES.map(({ icon: Icon, title, text }) => (
-                  <div key={title} className="bg-slate-900/60 p-4 rounded-xl border border-white/10 flex items-start gap-3">
+                  <div key={title} className="bg-ocean-900/60 p-4 rounded-xl border border-white/10 flex items-start gap-3">
                     <div className="p-2 bg-cyan-400/10 rounded-lg"><Icon className="w-5 h-5 text-cyan-300" /></div>
                     <div>
                       <h4 className="text-sm font-semibold text-white">{title}</h4>
@@ -139,7 +139,7 @@ export default function AboutUs() {
             <p className="text-slate-400 mt-2 mb-8">Get in touch to book a programme or ask any question.</p>
             <div className="grid sm:grid-cols-3 gap-4 text-left">
               {CONTACTS.map(({ icon: Icon, label, value }) => (
-                <div key={label} className="bg-slate-900/60 p-4 rounded-xl border border-white/10 flex items-start gap-3">
+                <div key={label} className="bg-ocean-900/60 p-4 rounded-xl border border-white/10 flex items-start gap-3">
                   <Icon className="w-5 h-5 text-cyan-300 shrink-0 mt-0.5" />
                   <div className="min-w-0">
                     <p className="text-xs text-slate-400">{label}</p>
