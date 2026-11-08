@@ -40,7 +40,7 @@ const VENUES = [
 
 export default function TrainingVenues() {
   return (
-    <section id="venues" className="scroll-mt-12 py-24 px-4 sm:px-8 lg:px-12 bg-ocean-700">
+    <section id="venues" className="scroll-mt-12 py-24 px-4 sm:px-8 lg:px-12 bg-slate-950">
       <SectionHeader
         eyebrow="Find Us"
         title={<>Training <span className="text-cyan-400">Venues</span></>}
@@ -64,8 +64,8 @@ export default function TrainingVenues() {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/90 via-transparent to-transparent" />
-                <span className="absolute top-3 left-3 bg-ocean-950/70 backdrop-blur-md text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full border border-cyan-400/30">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
+                <span className="absolute top-3 left-3 bg-slate-950/70 backdrop-blur-md text-cyan-300 text-xs font-semibold px-3 py-1 rounded-full border border-cyan-400/30">
                   {venue.tag}
                 </span>
               </a>
@@ -81,7 +81,7 @@ export default function TrainingVenues() {
 
                 <p className="text-sm text-slate-400 font-light leading-relaxed">{venue.description}</p>
 
-                <div className="bg-ocean-900/70 p-3.5 rounded-xl border border-white/10">
+                <div className="bg-slate-900/70 p-3.5 rounded-xl border border-white/10">
                   <div className="flex items-center gap-1.5 text-orange-300 font-semibold text-xs mb-1">
                     <Compass className="w-4 h-4" />
                     Directions & Landmarks

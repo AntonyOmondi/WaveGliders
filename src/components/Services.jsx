@@ -47,7 +47,7 @@ export default function Services() {
   }, [selected]);
 
   return (
-    <section id="services" className="scroll-mt-16 py-24 px-4 sm:px-8 lg:px-12 bg-gradient-to-b from-ocean-800 to-ocean-700">
+    <section id="services" className="scroll-mt-16 py-24 px-4 sm:px-8 lg:px-12 bg-gradient-to-b from-slate-950 via-cyan-950/40 to-slate-950">
       <SectionHeader
         eyebrow="Programmes & Pricing"
         title="Our Services"
@@ -65,8 +65,8 @@ export default function Services() {
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ocean-950/90 via-transparent to-transparent" />
-                <span className="absolute top-3 right-3 text-xs font-semibold px-3 py-1 rounded-full bg-ocean-950/70 backdrop-blur-md text-orange-300 border border-orange-400/30">
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent" />
+                <span className="absolute top-3 right-3 text-xs font-semibold px-3 py-1 rounded-full bg-slate-950/70 backdrop-blur-md text-orange-300 border border-orange-400/30">
                   {service.badge}
                 </span>
               </div>
@@ -116,7 +116,7 @@ export default function Services() {
           aria-label={selected.title}
         >
           <div
-            className="relative bg-ocean-900 border border-white/10 rounded-2xl max-w-md w-full p-6 shadow-2xl"
+            className="relative bg-slate-900 border border-white/10 rounded-2xl max-w-md w-full p-6 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button

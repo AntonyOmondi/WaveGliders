@@ -5,7 +5,7 @@ import Reveal from './Reveal';
 
 export default function Ceo() {
   return (
-    <section id="founder" className="scroll-mt-20 py-24 px-4 sm:px-8 lg:px-12 bg-ocean-700">
+    <section id="founder" className="scroll-mt-20 py-24 px-4 sm:px-8 lg:px-12 bg-slate-950">
       <Reveal className="max-w-7xl mx-auto">
       
       <SectionHeader
@@ -18,7 +18,7 @@ export default function Ceo() {
         <div className="flex flex-col lg:flex-row items-stretch">
           
           {/* LEFT SIDE: PHOTO SECTION WITH TITLES AT BOTTOM */}
-          <div className="w-full lg:w-5/12 relative group min-h-[420px] lg:min-h-[600px] flex flex-col justify-end overflow-hidden bg-ocean-950">
+          <div className="w-full lg:w-5/12 relative group min-h-[420px] lg:min-h-[600px] flex flex-col justify-end overflow-hidden bg-slate-950">
             {/* Founder Image */}
             <img 
               src={founderImg} 
@@ -27,12 +27,12 @@ export default function Ceo() {
             />
 
             {/* Gradient Overlays for Readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-ocean-950 via-ocean-950/40 to-transparent opacity-90"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-ocean-950/40 via-transparent to-ocean-950/80 lg:block hidden"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/40 via-transparent to-slate-950/80 lg:block hidden"></div>
 
             {/* Quote Badge overlay top-right */}
             <div className="absolute top-4 right-4 max-w-[220px] sm:max-w-[260px] z-10">
-            <div className="bg-ocean-900/85 backdrop-blur-md border border-slate-700/60 p-3 rounded-xl shadow-xl flex items-start gap-2.5">
+            <div className="bg-slate-900/85 backdrop-blur-md border border-slate-700/60 p-3 rounded-xl shadow-xl flex items-start gap-2.5">
                 <Quote className="w-4 h-4 text-orange-400 shrink-0 mt-0.5" />
                 <p className="text-[11px] sm:text-xs text-slate-200 italic font-light leading-snug">
                 "Water is where discipline meets art. I built Wave Gliders to teach both."
@@ -41,7 +41,7 @@ export default function Ceo() {
             </div>
 
             {/* Photo Bottom Titles Container */}
-            <div className="relative z-10 p-6 sm:p-8 space-y-2 border-t border-slate-800/60 bg-ocean-950/80 backdrop-blur-sm">
+            <div className="relative z-10 p-6 sm:p-8 space-y-2 border-t border-slate-800/60 bg-slate-950/80 backdrop-blur-sm">
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
                 Stephanie Joli Ondieki
               </h3>
@@ -72,7 +72,7 @@ export default function Ceo() {
                 As a <strong className="font-semibold text-white">High-Performance Swim Coach</strong>, my world revolves around technical excellence, split times, and long-term athlete development. But what truly sets my coaching apart is my background as a <strong className="font-semibold text-white">Fine Artist</strong>.
               </p>
 
-              <div className="bg-ocean-950/60 p-4 sm:p-5 rounded-xl border border-slate-800/80 relative">
+              <div className="bg-slate-950/60 p-4 sm:p-5 rounded-xl border border-slate-800/80 relative">
                 <p className="text-sm text-slate-300 font-light leading-relaxed">
                   To me, a swimmer’s stroke isn’t just biomechanics—it’s a <span className="text-orange-400 font-medium">living masterpiece</span>. That artistic eye for form, rhythm, and spatial detail allows me to see subtle mechanical tweaks that others miss, refining technique until high performance feels effortless.
                 </p>
@@ -84,7 +84,7 @@ export default function Ceo() {
             </div>
 
             {/* Why Wave Gliders Box */}
-            <div className="bg-ocean-950/80 p-5 sm:p-6 rounded-xl border border-slate-800 border-l-4 border-l-cyan-400 space-y-3">
+            <div className="bg-slate-950/80 p-5 sm:p-6 rounded-xl border border-slate-800 border-l-4 border-l-cyan-400 space-y-3">
               <h4 className="text-lg font-bold text-white flex items-center gap-2">
                 <HeartHandshake className="w-5 h-5 text-cyan-400" />
                 Why Wave Gliders?
@@ -99,7 +99,7 @@ export default function Ceo() {
 
             {/* Closing Motto Banner */}
             <div className="pt-2">
-              <div className="p-4 rounded-xl bg-gradient-to-r from-cyan-950/40 via-ocean-900 to-orange-950/30 border border-slate-800 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="p-4 rounded-xl bg-gradient-to-r from-cyan-950/40 via-slate-900 to-orange-950/30 border border-slate-800 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p className="text-xs sm:text-sm font-semibold italic text-slate-200">
                   "Every lap is a stroke of intent. Every race is a canvas. Welcome to Wave Gliders."
                 </p>
