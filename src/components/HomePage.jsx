@@ -1,74 +1,66 @@
 import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import bgImage from "../assets/swimming-bg.jpg";
 
-export default function HomePage({ onProgrammesClick, onAboutClick }) {
+export default function HomePage() {
   return (
-    <div className="relative min-h-screen flex flex-col justify-between overflow-hidden px-6 py-16 sm:py-20 lg:px-16 selection:bg-slate-800 selection:text-white">
-      
-      {/* Background Ambient Glow Accents */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 -right-20 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none" />
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 pt-28 pb-20"
+    >
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/50 to-slate-950" />
+      <div className="absolute top-1/4 -left-24 w-96 h-96 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 -right-24 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Main Hero Header */}
       <motion.div
-        initial={{ x: -60, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-        className="max-w-6xl z-10"
-      >
-        <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold uppercase tracking-widest text-cyan-100 bg-cyan-950 border border-cyan-800/60 rounded-full backdrop-blur-md">
-          Elite Swimming & Training
-        </span>
-        <h1 className="text-balance text-white text-shadow-lg text-4xl sm:text-6xl md:text-7xl lg:text-[100px] font-extrabold tracking-tight leading-[0.95]">
-          Wave <span className="text-slate-900">Gliders</span> Swim Club
-        </h1>
-      </motion.div>
-
-      {/* Welcome Card & CTA Section */}
-      <motion.div
-        initial={{ y: 60, opacity: 0 }}
+        initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-        className="max-w-3xl self-center w-full z-10 mt-12"
+        transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+        className="relative z-10 max-w-4xl text-center"
       >
-        <div className="p-6 sm:p-8 rounded-2xl bg-gray-700/60 backdrop-blur-md border border-slate-500/90 shadow-[0_0_30px_rgba(0,0,0,0.5)] flex flex-col items-center text-center">
-          
-          <h2 className="text-white text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
-            Welcome to Wave Gliders Swim Club
-          </h2>
+        <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold uppercase tracking-widest text-cyan-100 bg-cyan-400/10 border border-cyan-300/30 rounded-full backdrop-blur-md">
+          Swimming lessons & competitive coaching · Nairobi
+        </span>
+        <h1 className="text-5xl sm:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[0.95] text-white drop-shadow-lg">
+          Wave{" "}
+          <span className="bg-gradient-to-r from-cyan-300 to-blue-400 bg-clip-text text-transparent">
+            Gliders
+          </span>
+          <br />
+          Swim Club
+        </h1>
+        <p className="mt-6 mx-auto max-w-2xl text-slate-200 text-base sm:text-xl font-light leading-relaxed">
+          Empowering swimmers of all ages through world-class coaching, personalised training, and a
+          passion for excellence in and beyond the water.
+        </p>
 
-          <p className="mt-3 max-w-xl text-slate-100 text-sm sm:text-base font-light leading-relaxed">
-            Empowering swimmers of all ages through world-class coaching, personalized training, and a passion for excellence in and beyond the water.
-          </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 w-full sm:w-auto">
-            
-            {/* Primary Button */}
-            <motion.a 
-              href="#services"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={onProgrammesClick}
-              className="w-full cursor-pointer sm:w-44 curso-pointer py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-orange-950/50 transition-colors duration-200"
-            >
-              Our Programmes
-            </motion.a>
-
-            {/* Secondary Glassmorphism Button */}
-            <motion.a
-              href="#about"
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              onClick={onAboutClick}
-              className="w-full cursor-pointer sm:w-44 curso-pointer py-3 px-6 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-orange-950/50 transition-colors duration-200"
-            >
-              About Us
-            </motion.a>
-
-          </div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
+          <motion.a
+            href="#services"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="w-full sm:w-auto px-8 py-3.5 text-sm font-semibold text-white rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 shadow-lg shadow-cyan-900/50"
+          >
+            Our Programmes
+          </motion.a>
+          <motion.a
+            href="#about"
+            whileHover={{ scale: 1.04 }}
+            whileTap={{ scale: 0.97 }}
+            className="w-full sm:w-auto px-8 py-3.5 text-sm font-semibold text-white rounded-xl bg-white/10 border border-white/25 backdrop-blur-md hover:bg-white/20 transition-colors"
+          >
+            About Us
+          </motion.a>
         </div>
       </motion.div>
 
-    </div>
+      <a href="#programmes" aria-label="Scroll down" className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/70 animate-bounce">
+        <ChevronDown className="w-7 h-7" />
+      </a>
+    </section>
   );
 }

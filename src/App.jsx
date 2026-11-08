@@ -1,31 +1,25 @@
-import './App.css'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
-import Footer from './components/Footer'
 import Programmes from './components/Programmes'
 import Services from './components/Services'
-import AboutUs from './components/AboutUs'
 import TrainingVenues from './components/TrainingVenues'
+import AboutUs from './components/AboutUs'
 import Ceo from './components/Ceo'
-import bgImage from "./assets/swimming-bg.jpg"
+import Footer from './components/Footer'
 
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-slate-700/20 bg-blend-multiply bg-cover object-contain bg-no-repeat" style={{backgroundImage: `url(${bgImage})`}}>
-        <NavBar />
-        <section id='home'>
-          <HomePage />
-        </section>
-      </div>
-      <Programmes />
-      <Services />
-      <TrainingVenues />  
-      <AboutUs />
-      <Ceo />
-      <section className='bg-zinc-950/80'>
-        <Footer />
-      </section>
+      <NavBar />
+      <main>
+        <HomePage />
+        <Programmes />
+        <Services />
+        <TrainingVenues />
+        <AboutUs />
+        <Ceo />
+      </main>
+      <Footer />
     </>
   )
 }
