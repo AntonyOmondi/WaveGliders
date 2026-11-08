@@ -1,27 +1,20 @@
-import { Sparkles, Trophy, Palette, HeartHandshake, Quote } from 'lucide-react';
-import founderImg from '../assets/founder.jpg'; // Replace with Coach Stephanie's photo
+import { Trophy, Palette, HeartHandshake, Quote } from 'lucide-react';
+import founderImg from '../assets/founder.jpg';
+import SectionHeader from './SectionHeader';
+import Reveal from './Reveal';
 
-export default function MeetCEO() {
+export default function Ceo() {
   return (
-    <section id="founder" className="scroll-mt-28 pt-12 pb-16 px-4 bg-cyan-900/60 mt-16 sm:px-6 lg:px-12 mx-auto text-slate-100 font-sans">
+    <section id="founder" className="scroll-mt-20 py-24 px-4 sm:px-8 lg:px-12 bg-slate-950">
+      <Reveal className="max-w-7xl mx-auto">
       
-      {/* SECTION HEADER */}
-      <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
-          <Sparkles className="w-3.5 h-3.5" />
-          Leadership & Vision
-        </div>
-        <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-          Meet the <span className="text-cyan-400">Founder</span> & <span className="text-orange-500">Head Coach</span>
-        </h2>
-        <div className="flex items-center justify-center gap-1.5 pt-1">
-          <span className="h-1 w-12 bg-cyan-500 rounded-full"></span>
-          <span className="h-1 w-6 bg-orange-500 rounded-full"></span>
-        </div>
-      </div>
+      <SectionHeader
+        eyebrow="Leadership & Vision"
+        title={<>Meet the <span className="text-cyan-400">Founder</span> & <span className="text-orange-400">Head Coach</span></>}
+      />
 
       {/* MAIN CONTENT CARD */}
-      <div className="bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800 shadow-[0_0_30px_rgba(0,0,0,0.5)] overflow-hidden">
+      <div className="bg-white/5 rounded-2xl border border-white/10 shadow-2xl shadow-cyan-950/40 overflow-hidden">
         <div className="flex flex-col lg:flex-row items-stretch">
           
           {/* LEFT SIDE: PHOTO SECTION WITH TITLES AT BOTTOM */}
@@ -112,7 +105,7 @@ export default function MeetCEO() {
                 </p>
                 <a 
                   href="#join" 
-                  className="shrink-0 px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:to-blue-500 hover:bg-orange-600 text-white text-xs font-semibold shadow-lg shadow-orange-950/50 transition-colors duration-200"
+                  className="shrink-0 px-4 py-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:to-blue-500 text-white text-xs font-semibold shadow-lg shadow-cyan-950/50 transition-colors duration-200"
                 >
                   Join Our Team
                 </a>
@@ -123,7 +116,7 @@ export default function MeetCEO() {
 
         </div>
       </div>
-
+      </Reveal>
     </section>
   );
 }
