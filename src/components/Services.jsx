@@ -26,7 +26,7 @@ const SERVICES_DATA = [
   },
   {
     id: 3,
-    title: "Learn to Swim and Competitive",
+    title: "Adults - Learn to Swim and Competitive",
     badge: "Advanced",
     currency: "Ksh.",
     price: "15,000",
@@ -105,6 +105,13 @@ export default function Services() {
             </article>
           </Reveal>
         ))}
+      </div>
+
+      <div className="max-w-2xl mx-auto mt-10 flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-orange-400/10 border border-orange-400/40 text-base sm:text-lg font-medium text-white text-center">
+        <Info className="w-5 h-5 text-orange-300 shrink-0" />
+        <span>
+          <span className="font-bold text-orange-300">Disclaimer:</span> All prices are exclusive of pool fees.
+        </span>
       </div>
 
       {selected && (
