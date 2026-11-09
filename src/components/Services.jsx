@@ -145,6 +145,9 @@ export default function Services() {
                 <span>Duration</span>
                 <span className="font-bold text-white">{selected.duration}</span>
               </div>
+              <p className="pt-2 text-xs font-medium text-orange-300 border-t border-white/10">
+                Disclaimer: All prices are exclusive of pool fees.
+              </p>
             </div>
 
             <p className="text-sm text-slate-300 mb-6 leading-relaxed">{selected.description}</p>
