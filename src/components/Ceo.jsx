@@ -5,8 +5,8 @@ import Reveal from './Reveal';
 
 export default function Ceo() {
   return (
-    <section id="founder" className="scroll-mt-20 py-24 px-4 sm:px-8 lg:px-12 bg-slate-950">
-      <Reveal className="max-w-7xl mx-auto">
+    <div id="founder" className="scroll-mt-20">
+      <Reveal>
       
       <SectionHeader
         eyebrow="Leadership & Vision"
@@ -117,6 +117,6 @@ export default function Ceo() {
         </div>
       </div>
       </Reveal>
-    </section>
+    </div>
   );
 }

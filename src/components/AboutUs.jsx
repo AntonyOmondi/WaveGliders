@@ -3,6 +3,7 @@ import facility from '../assets/facility.jpg';
 import swimmingImg from '../assets/swimming-bg.jpg';
 import SectionHeader from './SectionHeader';
 import Reveal from './Reveal';
+import Ceo from './Ceo';
 
 const card = "bg-white/5 backdrop-blur-md rounded-2xl border border-white/10";
 
@@ -105,6 +106,9 @@ export default function AboutUs() {
             ))}
           </div>
         </div>
+
+        {/* Founder & Head Coach */}
+        <Ceo />
 
         {/* Facilities */}
         <Reveal>

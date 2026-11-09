@@ -7,7 +7,6 @@ const LINKS = [
   { href: "#services", label: "Services" },
   { href: "#venues", label: "Training Venues" },
   { href: "#about", label: "About Us" },
-  { href: "#founder", label: "Our Coach" },
 ];
 
 export default function NavBar() {
