@@ -36,7 +36,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold">Contact Us</h3>
             <p className={linkClass}><FaEnvelope className="shrink-0 text-cyan-400" /><span className="break-all">wavegliderskenya@gmail.com</span></p>
             <p className={linkClass}><FaPhoneAlt className="shrink-0 text-cyan-400" /> +254 726 462 641</p>
-            <p className={linkClass}><FaMapMarkerAlt className="shrink-0 text-cyan-400" /> Nairobi, Kenya</p>
+            <p className={linkClass}><FaMapMarkerAlt className="shrink-0 text-cyan-400" /> Kenya </p>
           </div>
 
           <div className="space-y-4 flex flex-col items-center text-center">
