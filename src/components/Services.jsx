@@ -10,7 +10,7 @@ const SERVICES_DATA = [
     badge: "Advanced",
     currency: "Ksh.",
     price: "15,000",
-    duration: "16 training days or one month",
+    duration: "Per Month",
     image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80",
     description: "Designed for swimmers looking to master advanced strokes, flip turns, and endurance building for competitive swimming levels."
   },
@@ -20,7 +20,7 @@ const SERVICES_DATA = [
     badge: "Minors",
     currency: "Ksh.",
     price: "15,000",
-    duration: "18 days",
+    duration: "Per Month",
     image: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80",
     description: "An intensive youth program focusing on sprint techniques, stream-line positioning, and stroke efficiency."
   },
@@ -30,7 +30,7 @@ const SERVICES_DATA = [
     badge: "Advanced",
     currency: "Ksh.",
     price: "15,000",
-    duration: "One month",
+    duration: "Per Month",
     image: "https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=800&q=80",
     description: "Tailored adult water confidence and stroke technique sessions aimed at building stamina and water safety."
   }
