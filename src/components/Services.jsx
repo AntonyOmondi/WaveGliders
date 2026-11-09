@@ -6,7 +6,7 @@ import Reveal from './Reveal';
 const SERVICES_DATA = [
   {
     id: 1,
-    title: "Competitive swimming classes",
+    title: "Stroke School and Competitive",
     badge: "Advanced",
     currency: "Ksh.",
     price: "15,000",
@@ -16,7 +16,7 @@ const SERVICES_DATA = [
   },
   {
     id: 2,
-    title: "Learn to Swim - Under 5 years",
+    title: "Learn to Swim",
     badge: "Minors",
     currency: "Ksh.",
     price: "15,000",
@@ -26,10 +26,10 @@ const SERVICES_DATA = [
   },
   {
     id: 3,
-    title: "Adult Basic swimming - Beginners and Competitive",
+    title: "Learn to Swim and Competitive",
     badge: "Advanced",
     currency: "Ksh.",
-    price: "20,000",
+    price: "15,000",
     duration: "One month",
     image: "https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=800&q=80",
     description: "Tailored adult water confidence and stroke technique sessions aimed at building stamina and water safety."

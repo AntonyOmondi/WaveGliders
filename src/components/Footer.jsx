@@ -17,6 +17,7 @@ const VENUE_LINKS = [
   { name: "All Saints Primary School - Madaraka", href: "https://maps.app.goo.gl/PdiqrP4zagZxNSKy8" },
   { name: "Public Service Club - Upper Hill", href: "https://maps.app.goo.gl/efqqcBBDkPDj2mwf9" },
   { name: "Stedmark Gardens - Karen", href: "https://maps.app.goo.gl/WCaKtkjTeEeF8KHB9" },
+  { name: "Private Pools - House Calls"}
 ];
 
 export default function Footer() {
