@@ -25,9 +25,9 @@ const FACILITIES = [
 ];
 
 const CONTACTS = [
-  { icon: Mail, label: "Email", value: "info@wavegliders.com" },
-  { icon: Phone, label: "Phone / WhatsApp / SMS", value: "+254 700 123 456 | +254 701 583 427" },
-  { icon: Globe, label: "Website", value: "www.wavegliders.com" },
+  { icon: Mail, label: "Email", value: "wavegliderkenya@gmail.com" },
+  { icon: Phone, label: "Phone / WhatsApp / SMS", value: "+254 726 462 641 | +254 110 951 560" },
+  { icon: Globe, label: "Website", value: "www.waveglidersswimclub.com" },
 ];
 
 const iconColor = (accent) => (accent === "orange" ? "text-orange-300 bg-orange-400/10" : "text-cyan-300 bg-cyan-400/10");
