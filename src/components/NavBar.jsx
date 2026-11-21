@@ -4,9 +4,10 @@ import wvgsclogo from "../assets/wvgsclogo.png";
 
 const LINKS = [
   { href: "#home", label: "Home" },
-  { href: "#services", label: "Services" },
+  { href: "#services", label: "Programmes" },
+  { href: "#packages", label: "Packages" },
   { href: "#venues", label: "Training Venues" },
-  { href: "#about", label: "About Us" },
+  { href: "#about", label: "About Us" }
 ];
 
 export default function NavBar() {
