@@ -6,33 +6,85 @@ import Reveal from './Reveal';
 const SERVICES_DATA = [
   {
     id: 1,
-    title: "Stroke School and Competitive",
-    badge: "Advanced",
+    title: "Stroke Development & Competitive Squad",
+    badge: "Competitive & Squad",
     currency: "Ksh.",
     price: "15,000",
     duration: "Per Month",
     image: "https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=800&q=80",
-    description: "Designed for swimmers looking to master advanced strokes, flip turns, and endurance building for competitive swimming levels."
+    description: "Refine your technique across all four strokes, build race-pace endurance, and train for regional and national galas.",
+    overview: "Designed for swimmers who can already swim independently and are ready to level up their speed, efficiency, and race strategy. Led by certified coaching, this squad bridges the gap between basic swimming and competitive gala performance.",
+    listHeading: "What You'll Master",
+    list: [
+      "Biomechanics and technical efficiency across all four competitive strokes (Freestyle, Backstroke, Breaststroke, Butterfly)",
+      "Explosive starts, streamlines, and fast flip-turns",
+      "Race-pace endurance (USRPT) and dryland conditioning",
+      "Preparation and representation at local, regional, and national swimming galas"
+    ],
+    feeNote: "excludes pool entry fees",
+    gear: "Swimsuit, goggles, swim cap, kickboard, pull buoy, fins, and hand paddles",
+    cta: "Join Competitive Squad"
   },
   {
     id: 2,
-    title: "Learn to Swim",
-    badge: "Minors",
+    title: "Junior Learn-to-Swim",
+    badge: "Kids & Juniors",
     currency: "Ksh.",
     price: "15,000",
     duration: "Per Month",
     image: "https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=800&q=80",
-    description: "An intensive youth program focusing on sprint techniques, stream-line positioning, and stroke efficiency."
+    description: "Fun, safety-first water confidence lessons designed to take young swimmers from their very first splash to independent swimming.",
+    overview: "A supportive, high-engagement programme built to make children safe, confident, and happy in the water. We break swimming down into fun, achievable milestones so kids progress without fear or pressure.",
+    listHeading: "What Your Child Will Learn",
+    list: [
+      "Water safety, breath control, and floating independently",
+      "Kicking mechanics and body balance in the water",
+      "Foundational Freestyle and Backstroke coordination",
+      "Deep-water confidence and transitioning toward Stroke School"
+    ],
+    feeNote: "excludes pool entry fees",
+    gear: "Comfortable swimsuit, well-fitted goggles, swim cap, and towel",
+    cta: "Enrol Your Child"
   },
   {
     id: 3,
-    title: "Adults - Learn to Swim and Competitive",
-    badge: "Advanced",
+    title: "Adult & Masters Swimming",
+    badge: "All Levels",
     currency: "Ksh.",
     price: "15,000",
     duration: "Per Month",
     image: "https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=800&q=80",
-    description: "Tailored adult water confidence and stroke technique sessions aimed at building stamina and water safety."
+    description: "Conquer a fear of deep water, master lap swimming for fitness, or train alongside our competitive Masters squad—at any age.",
+    overview: "It is never too late to learn to swim—or to get back into competitive shape. Whether you are stepping into the deep end for the very first time or training for fitness and Masters galas, our adult sessions are judgment-free and goal-oriented.",
+    listHeading: "Choose Your Track",
+    list: [
+      "Adult Beginners: Overcome water anxiety, master rhythmic breathing, and learn to swim full lengths smoothly.",
+      "Fitness & Masters: Structured lap workouts, stroke correction, and endurance training for active adults and Masters athletes."
+    ],
+    feeNote: "excludes pool entry fees",
+    gear: "Swimsuit, goggles, and swim cap",
+    cta: "Book Adult Session"
+  },
+  {
+    id: 4,
+    title: "Private & House-Call Lessons",
+    badge: "1-on-1 Coaching",
+    currency: "Ksh.",
+    price: "", // TODO: client to confirm the 4-lesson package price
+    duration: "4 Lessons",
+    image: "https://images.unsplash.com/photo-1576610616656-d3aa5d1f4534?auto=format&fit=crop&w=800&q=80",
+    description: "Personalized, one-on-one coaching tailored entirely to your pace—available at our partner pools or in the comfort of your own private pool.",
+    overview: "Maximum focus, faster progress, and flexible scheduling. Ideal for beginners wanting undivided attention, busy professionals, or families with access to a home or estate pool.",
+    listHeading: "What's Included",
+    list: [
+      "100% customized lesson plans built around your specific goals",
+      "Immediate, real-time stroke and breathing feedback",
+      "Flexible scheduling at select club pools or your preferred location"
+    ],
+    feeLabel: "House-Call Package",
+    feeNote: "for 4 dedicated sessions (custom group/family rates available on request)",
+    gear: "Swimsuit, goggles, and swim cap",
+    cta: "Request Private Coaching"
   }
 ];
 
@@ -50,11 +102,11 @@ export default function Services() {
     <section id="services" className="scroll-mt-16 py-24 px-4 sm:px-8 lg:px-12 bg-gradient-to-b from-slate-950 via-cyan-950/40 to-slate-950">
       <SectionHeader
         eyebrow="Programmes & Pricing"
-        title="Our Services"
-        subtitle="Swimming programmes tailored for every age group and skill level."
+        title="Swim Programmes"
+        subtitle="Whether you’re taking your first breath in the water or chasing podium finishes, we have a lane built for your goals."
       />
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         {SERVICES_DATA.map((service, i) => (
           <Reveal key={service.id} delay={i * 0.1} className="h-full">
             <article className="group h-full flex flex-col bg-white/5 rounded-2xl border border-white/10 overflow-hidden hover:border-cyan-400/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-cyan-950/50 transition duration-300">
@@ -73,11 +125,18 @@ export default function Services() {
 
               <div className="p-6 flex-1 flex flex-col">
                 <h3 className="text-xl font-bold text-white leading-snug">{service.title}</h3>
+                <p className="mt-2 text-sm text-slate-400 leading-relaxed">{service.description}</p>
 
                 <div className="mt-4 pt-4 border-t border-white/10 flex items-center justify-between gap-3">
                   <div className="flex items-baseline gap-1">
-                    <span className="text-xs font-medium text-slate-400">{service.currency}</span>
-                    <span className="text-2xl font-extrabold text-white">{service.price}</span>
+                    {service.price ? (
+                      <>
+                        <span className="text-xs font-medium text-slate-400">{service.currency}</span>
+                        <span className="text-2xl font-extrabold text-white">{service.price}</span>
+                      </>
+                    ) : (
+                      <span className="text-base font-bold text-white">Ask for rates</span>
+                    )}
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-slate-300 bg-white/5 px-2.5 py-1.5 rounded-lg border border-white/10">
                     <Clock className="w-3.5 h-3.5 text-cyan-300" />
@@ -98,7 +157,7 @@ export default function Services() {
                     className="py-2.5 px-4 text-xs font-semibold rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-950/50 transition active:scale-95 flex items-center justify-center gap-1.5"
                   >
                     <Calendar className="w-3.5 h-3.5" />
-                    Book Now
+                    Book a Session
                   </a>
                 </div>
               </div>
@@ -110,7 +169,7 @@ export default function Services() {
       <div className="max-w-2xl mx-auto mt-10 flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-orange-400/10 border border-orange-400/40 text-base sm:text-lg font-medium text-white text-center">
         <Info className="w-5 h-5 text-orange-300 shrink-0" />
         <span>
-          <span className="font-bold text-orange-300">Disclaimer:</span> All prices are exclusive of pool fees.
+          <span className="font-bold text-orange-300">Note:</span> Monthly coaching fees do not include venue pool entry charges.
         </span>
       </div>
 
