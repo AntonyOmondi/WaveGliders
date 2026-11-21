@@ -2,6 +2,7 @@ import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import Programmes from './components/Programmes'
 import Services from './components/Services'
+import Packages from './components/Packages'
 import TrainingVenues from './components/TrainingVenues'
 import AboutUs from './components/AboutUs'
 import Footer from './components/Footer'
@@ -14,6 +15,7 @@ function App() {
         <HomePage />
         <Programmes />
         <Services />
+        <Packages />
         <TrainingVenues />
         <AboutUs />
       </main>
