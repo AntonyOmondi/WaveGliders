@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Clock, Info, Calendar, X } from 'lucide-react';
+import { Clock, Info, Calendar, X, MessageCircle } from 'lucide-react';
 import SectionHeader from './SectionHeader';
 import Reveal from './Reveal';
 
@@ -88,6 +88,8 @@ const SERVICES_DATA = [
   }
 ];
 
+const WHATSAPP_URL = "https://wa.me/254726462641?text=Hi%20Wave%20Gliders%2C%20I%27d%20like%20to%20know%20more%20about%20your%20swim%20programmes.";
+
 export default function Services() {
   const [selected, setSelected] = useState(null);
 
@@ -166,7 +168,17 @@ export default function Services() {
         ))}
       </div>
 
-      <div className="max-w-2xl mx-auto mt-10 flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-orange-400/10 border border-orange-400/40 text-base sm:text-lg font-medium text-white text-center">
+      <a
+        href={WHATSAPP_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="max-w-2xl mx-auto mt-10 flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-500/10 border border-emerald-400/40 text-sm sm:text-base font-medium text-white text-center hover:bg-emerald-500/20 transition"
+      >
+        <MessageCircle className="w-5 h-5 text-emerald-300 shrink-0" />
+        <span>Not sure which programme fits? <span className="font-bold text-emerald-300 underline underline-offset-4">Chat with us on WhatsApp</span></span>
+      </a>
+
+      <div className="max-w-2xl mx-auto mt-4 flex items-center justify-center gap-3 px-5 py-4 rounded-xl bg-orange-400/10 border border-orange-400/40 text-base sm:text-lg font-medium text-white text-center">
         <Info className="w-5 h-5 text-orange-300 shrink-0" />
         <span>
           <span className="font-bold text-orange-300">Note:</span> Monthly coaching fees do not include venue pool entry charges.
@@ -182,7 +194,7 @@ export default function Services() {
           aria-label={selected.title}
         >
           <div
-            className="relative bg-slate-900 border border-white/10 rounded-2xl max-w-md w-full p-6 shadow-2xl"
+            className="relative bg-slate-900 border border-white/10 rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -195,28 +207,39 @@ export default function Services() {
             <span className="text-xs font-semibold text-orange-300">{selected.badge}</span>
             <h3 className="text-xl font-bold text-white mt-1 pr-6">{selected.title}</h3>
 
-            <div className="bg-white/5 p-4 rounded-xl border border-white/10 my-5 space-y-2 text-sm">
-              <div className="flex justify-between text-slate-400">
-                <span>Fee</span>
-                <span className="font-bold text-white">{selected.currency} {selected.price}</span>
-              </div>
-              <div className="flex justify-between text-slate-400">
-                <span>Duration</span>
-                <span className="font-bold text-white">{selected.duration}</span>
-              </div>
-              <p className="pt-2 text-xs font-medium text-orange-300 border-t border-white/10">
-                Disclaimer: All prices are exclusive of pool fees.
-              </p>
-            </div>
+            <p className="text-sm text-slate-300 mt-4 leading-relaxed">{selected.overview}</p>
 
-            <p className="text-sm text-slate-300 mb-6 leading-relaxed">{selected.description}</p>
+            <h4 className="mt-5 mb-2 text-sm font-bold text-cyan-300">{selected.listHeading}</h4>
+            <ul className="space-y-2 text-sm text-slate-300">
+              {selected.list.map((item) => (
+                <li key={item} className="flex gap-2">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-orange-400 shrink-0" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <div className="bg-white/5 p-4 rounded-xl border border-white/10 my-5 space-y-3 text-sm">
+              <div>
+                <span className="text-slate-400">{selected.feeLabel || "Fee"}: </span>
+                <span className="font-bold text-white">
+                  {selected.price ? `${selected.currency} ${selected.price}` : "Ksh. \u2026"}
+                  {selected.price && selected.duration === "Per Month" ? " per month" : ""}
+                </span>
+                <span className="text-slate-300"> ({selected.feeNote})</span>
+              </div>
+              <div>
+                <span className="text-slate-400">Gear Needed: </span>
+                <span className="text-slate-200">{selected.gear}</span>
+              </div>
+            </div>
 
             <a
               href="#join"
               onClick={() => setSelected(null)}
               className="block text-center py-2.5 text-sm font-semibold rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
             >
-              Book this programme
+              {selected.cta}
             </a>
           </div>
         </div>
